@@ -30,6 +30,5 @@ int main() {
     printf("Time is %.2f hours\n", time);
 // .2f - округлення до 2 знаків після крапки
 
-    system("pause");
     return 0;
 }
