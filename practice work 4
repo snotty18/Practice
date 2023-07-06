@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Функція для пошуку дільників числа m
+int result(int m)
+{
+    int count = 0;
+
+    // Умова щоб m був більше за 1 але меньше ніж 150
+    if (m < 1 || m > 150)
+        return 0;
+
+    for(int i = 1; i <= m; i++)
+    {
+        if(m % i == m / i)
+        {
+            count++; 
+        }
+    }
+    return count;
+}
+
+int main()
+{
+    // Створюємо змінні
+    int m;
+    int res = 0;
+    printf("Запишіть a m чисела: ");
+    scanf("%d", &m);
+    res = result(m);
+    printf("\nResult is: %d\n", res);
+    return 0;
+}
