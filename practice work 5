@@ -27,7 +27,7 @@ int main(void)
 	int n = 0;
 	printf("Введіть значення n: ");
 	scanf("%d", &n);
-	printf("Результат: ");
+	printf("Кількість шуканих повідомдлень: ");
 	count(n);
 	printf("\n");
 
